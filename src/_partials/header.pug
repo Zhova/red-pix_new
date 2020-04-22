@@ -1,0 +1,32 @@
+mixin header
+	#preloader
+		.lds-css.ng-scope
+			.lds-eclipse
+				.rotate
+
+	+b.HEADER.header.container
+		+e.logo
+			a(href="index.html")
+				img(src="img/logo.svg")
+		+e.UL.menu
+			li
+				a#link-serv(href="#second-screen") Services
+			li
+				a#link-port(href="#portfolio") Portfolio
+			li
+				a#link-about(href="#about") About Us
+			li
+				a#link-cont(href="#footer") Contacts
+		+b.A.btn_red.btn_small.btn_default(href="") CONSULTATION
+		+b.lang-block
+			p en
+			+e.UL.lang-list
+				hr
+				li ru
+				hr
+				li ua
+				
+		+b.burger
+			+e.line
+			+e.line
+			+e.line

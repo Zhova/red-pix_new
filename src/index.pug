@@ -1,0 +1,70 @@
+include bemto/bemto.pug
+
+//- include partials
+//- Хедер
+include _partials/header.pug
+
+//- Главная
+include _partials/main_screen.pug
+
+//- development-main
+include _partials/development-main.pug
+
+
+//- second-screen
+include _partials/second-screen.pug
+
+//- second-common
+include _partials/second-common.pug
+
+//- portfolio
+include _partials/portfolio.pug
+
+//- about
+include _partials/about.pug
+
+
+//- Футер
+include _partials/footer.pug
+
+//- 404
+include _partials/404.pug
+
+doctype html 
+html
+	head
+		link(rel="shortcut icon" href="./img/fav-redpix.png" type="image/png")
+		title Red-pix
+		
+		//- include style.css
+		link(rel="stylesheet" type="text/css" href="css/all_style.css")
+
+		link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css")
+		//- include animate.css
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
+		link(href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet")
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+
+	body
+		+header
+		+main_screen
+		//- +development-main
+		//- +second-common
+		+second-screen
+		+portfolio
+		+about
+		+footer
+		//- +404
+
+
+
+
+		//- wow js
+		//- script(src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js")
+		//- script new WOW().init();
+		//- libs js
+		script(type="text/javascript" src="js/all_libs.js")
+		script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js")
+		//- js
+		script(type="text/javascript" src="js/all_js.js")

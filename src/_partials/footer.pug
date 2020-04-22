@@ -1,0 +1,24 @@
+mixin footer
+	+b.FOOTER.footer#footer
+		+e.gradient
+		+b.contacts
+			+e.H2.title4.block__title Контакты
+			.del
+			+b.address
+				+e.P.title НАШ АДРЕС:
+				+e.text 
+					p.street Украина, г. Киев, ул. Е. Мирошниченко 6\11 
+					p.phones Тел: 068 675 77 55 | 066 675 77 55 
+					p.mail E-mail: info@red-pix.com
+			+b.FORM.form
+				+e.P.title Напишите нам прямо сейчас:
+				+e.tel-mail
+					input(type="text" placeholder="Ваше имя")
+					input(type="email" placeholder="Ваш e-mail")
+				input.area-text(type="text" placeholder="Ваше сообщение")
+				+e.A.btn.btn_red.btn_big.btn_default(href="") Отправить
+		+b.A#to-top
+
+
+
+			
